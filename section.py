@@ -12,11 +12,22 @@ def section_1(s):
         print(s[:i])
 
 
-# 语法有误,待修正
 def section_2(s):
     s = str(s)
     i = -1
-    for i in [None] + range(-1, -len(s), -1):
+    list_1 = [None] + list(range(-1, -len(s), -1))
+    for i in list_1:
         print(s[:i])
 
 
+section_2('abcde')
+
+
+def section_3(s):
+    s = str(s)
+    i = 1
+    for i in range(len(s) + 1):
+        print(s[:i])
+
+
+section_3('abcde')
